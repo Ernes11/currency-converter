@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@100;300;400;500;600;800;900&family=Roboto:ital,wght@0,400;0,500;0,900;1,100&display=swap');
+
+$mainColor: rgb(27, 26, 26);
+$secondaryColor:#5e5a5a;
+$tertiaryColor: white;
+
+
+
+// $width: 900px;
+// @mixin tablet {
+//   @media (max-width: #{$width}) {
+//     @content;
+//   }
+// }
+
+$width: 768px;
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}

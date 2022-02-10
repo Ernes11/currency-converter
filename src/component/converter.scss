@@ -1,0 +1,102 @@
+@import "../global.scss";
+
+.row {
+ 
+  box-sizing: border-box;
+  .top-input {
+    .form-currency.left {
+      appearance: none;
+      display: block;
+      float: left;
+      width: 52.1%;
+      padding: 10px;
+      padding-left: 8rem;
+      height: 50px;
+      background-color: $mainColor;
+      clip-path: polygon(0% 0%, 96% 0%, 100% 50%, 96% 100%, 0% 100%);
+      color: $tertiaryColor;
+      border: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+
+      @include mobile {
+        clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+      }
+    }
+
+    .form-currency.right {
+      appearance: none;
+      display: block;
+      float: right;
+      width: 48%;
+      padding: 10px;
+      padding-left: 30px;
+      height: 50px;
+      color: $tertiaryColor;
+      clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 4% 50%, 0% 0%);
+      background-color: $secondaryColor;
+      position: absolute;
+      right: 20px;
+      border: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+      opacity: 0.5;
+      @include mobile {
+        clip-path: polygon(
+          100% 0,
+          100% 50%,
+          100% 100%,
+          0% 100%,
+          10% 50%,
+          0% 0%
+        );
+      }
+    }
+  }
+  .form-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .bottom-input {
+      &.left.currency {
+        float: left;
+        width: 46.8%;
+        padding: 5px;
+        padding-left: 30px;
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        color: $tertiaryColor;
+        background-color: $mainColor;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+
+        @include mobile {
+          width: 38%;
+        }
+      }
+
+      .form-control.right {
+        float: right;
+        width: 44.6%;
+        padding: 5px;
+        padding-left: 30px;
+        position: absolute;
+        top: 50px;
+        right: 20.05px;
+        color: $tertiaryColor;
+        background-color: $secondaryColor;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+        opacity: 0.5;
+
+        @include mobile {
+          width: 39.1%;
+        }
+      }
+    }
+  }
+}
